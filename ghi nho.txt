@@ -1,0 +1,40 @@
+RETICULATE_PYTHON="C:/Users/congd/anaconda3/envs/danpc1/python.exe"
+
+Sys.setenv(RETICULATE_PYTHON = "C:/Users/congd/anaconda3/envs/danpc1/python.exe")
+
+pandas==0.15.3
+nympy==1.14.0
+tensorflow=1.11.0
+keras==2.1.5
+
+Thay doi python path:
+
+library(reticulate)
+> use_python("C:/Users/congd/anaconda3/envs/danpc1/python.exe")
+> repl_python()
+
+
+python -m pip install tensorflow==1.8.0
+
+--user (admin)
+
+
+install_tensorflow(
+  method = c("auto", "virtualenv", "conda"),
+  conda = "auto",
+  version = "default",
+  envname = NULL,
+  extra_packages = NULL,
+  restart_session = TRUE,
+  conda_python_version = NULL,
+  ...,
+  pip_ignore_installed = TRUE,
+  python_version = conda_python_version
+)
+
+vi du:
+
+install_tensorflow(method = "auto", version = "1.13",
+ conda = "C:/Users/congd/anaconda3/Scripts/conda.exe", 
+envname = "danpc1", conda_python_version = "3.6")
+
